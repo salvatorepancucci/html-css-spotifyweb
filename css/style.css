@@ -181,6 +181,13 @@ h6 {
     width: 190px;
 }
 
+.round {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /* Utility */
 
 .bg-grey {
