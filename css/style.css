@@ -35,8 +35,6 @@ nav {
 
 main {
     background-color: #141922;
-    height: calc(100vh - 100px);
-    overflow: auto;
 }
 
 footer {
@@ -45,6 +43,7 @@ footer {
     height: 100px;
     position: fixed;
     bottom: 0; 
+    z-index: 1;
 }
 
 .container-side {
@@ -54,8 +53,10 @@ footer {
 
 .container-main {
     width: calc(100vw - 50px);
+    height: calc(100vh - 200px);
     position: relative;
     left: 50px;
+    overflow: auto;
 }
 
 .col-head {
@@ -80,15 +81,21 @@ footer {
 }
 
 .col-main {
-    background-color: red;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    height: 200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .col-main-double {
-    flex-shrink: 1;
     width: 100%;
+    margin: 0 auto;
+}
+
+.col-main-text {
+    width: 100%;
+    margin: 0 12px;
 }
 
 .col-foot {
@@ -137,6 +144,7 @@ ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 li {
@@ -144,6 +152,33 @@ li {
     font-size: 12px;
     margin: 5px auto;
     padding: 10px;
+}
+
+hr {
+    position: absolute;
+    width: 30px;
+    border: 1px solid #99E12D;
+    top: 30px;
+    left: 40px;
+}
+
+h2 {
+    color: white;
+    margin: 20px 0;
+}
+
+h4 {
+    color: white;
+    margin: 10px 0;
+}
+
+h6 {
+    color: grey;
+    margin: 1px 0 20px 0;
+}
+
+.content-main > img {
+    width: 190px;
 }
 
 /* Utility */
