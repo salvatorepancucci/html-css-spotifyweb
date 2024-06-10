@@ -27,13 +27,14 @@ header {
 nav {
     background-color: #000000;
     width: 50px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 main {
-    background-color: red;
+    background-color: #141922;
     height: calc(100vh - 100px);
     overflow: auto;
 }
@@ -49,6 +50,12 @@ footer {
 .container-side {
     display: flex;
     height: calc(100vh - 100px);
+}
+
+.container-main {
+    width: calc(100vw - 50px);
+    position: relative;
+    left: 50px;
 }
 
 .col-head {
@@ -72,6 +79,18 @@ footer {
     text-align: center;
 }
 
+.col-main {
+    background-color: red;
+    border: 1px solid black;
+    width: 50%;
+    height: 200px;
+}
+
+.col-main-double {
+    flex-shrink: 1;
+    width: 100%;
+}
+
 .col-foot {
     width: calc(100% / 3 - 20px);
     height: 70px;
@@ -82,6 +101,11 @@ footer {
 
 .content-side {
     padding-bottom: 10px;
+}
+
+.content-main {
+    display: flex;
+    justify-content: center;
 }
 
 /* Specs & Elements */
@@ -107,6 +131,19 @@ button {
 
 .icon-3 {
     width: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    color: #75787C;
+    font-size: 12px;
+    margin: 5px auto;
+    padding: 10px;
 }
 
 /* Utility */
