@@ -497,7 +497,7 @@ h6 {
 
 @media screen and (min-width: 768px) {
     .content-main > img {
-        width: 100px;
+        width: 120px;
     }
 
     .col-main {
@@ -507,8 +507,8 @@ h6 {
     }
 
     .round {
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 120px;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -533,6 +533,17 @@ h6 {
         margin: 0;
     }
 
+    .content-main > img {
+        width: 150px;
+    }
+
+    .round {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover; 
+    }
+
     .hr-grey-3 {
         width: 120px;
     }
@@ -551,5 +562,17 @@ h6 {
 
     .col-foot-left {
         margin-left: 15px;
+    }
+
+    h4 {
+        color: white;
+        margin: 10px 0;
+        font-size: 13px;
+    }
+    
+    h6 {
+        color: grey;
+        margin: 1px 0 20px 0;
+        font-size: 13px;
     }
 }
