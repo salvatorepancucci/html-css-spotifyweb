@@ -184,6 +184,10 @@ li {
     left: 40px;
 }
 
+.hr-g-2 {
+    display: none;
+}
+
 .hr-grey-1 {
     width: 20px;
     border: 2px solid #C1C1C1;
@@ -261,15 +265,33 @@ h6 {
     color: grey;
 }
 
-/* .fa-circle-play {
-    position: absolute;
-    bottom: -5px;
-    left: 55px;
-} */
+.fa-plus {
+    display: none;
+}
+
+.content-side > .icon-logo {
+    display: none;
+}
 
 .time {
     font-size: 10px;
     color: white;
+}
+
+.menu-text {
+    display: none;
+}
+
+.menu-text-grey {
+    display: none;
+}
+
+.menu-text-grey-2 {
+    display: none;
+}
+
+.hr-side {
+    display: none;
 }
 
 /* Utility */
@@ -294,15 +316,124 @@ h6 {
     font-size: 11px;
 }
 
-/* Media Query */
-@media screen and (mix-width: 576px) {
-
+.font-size-12 {
+    font-size: 12px;
 }
 
-@media screen and (mix-width: 768px) {
+/* Media Query */
+@media screen and (min-width: 576px) {
+    nav {
+        width: 200px;
+    }
+
+    .container-main {
+        width: calc(100vw - 200px);
+        left: 200px;
+    }
+
+    .container-side {
+        position: relative;
+    }
+
+    .col-side {
+        margin-left: 10px;
+        text-align: left;
+        position: relative;
+    }
+
+    .col-side-2 {
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+        text-align: left;
+    }
+
+    .content-main > img {
+        width: 150px;
+    }
+
+    .round {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .content-side > .icon-1 {
+        display: none;
+    }
+
+    .content-side > .icon-logo {
+        display: block;
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .content-side {
+        padding: 5px;
+    }
+
+    .menu-text {
+        display: inline;
+        color: white;
+        font-size: 11px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .menu-text-grey {
+        display: inline-block;
+        color: grey;
+        font-size: 11px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    .menu-text-grey-2 {
+        display: block;
+        color: grey;
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .icon-2 {
+        width: 20px;
+        vertical-align: middle;
+    }
+
+    .icon-3 {
+        width: 15px;
+        vertical-align: middle;
+    }
+
+    .fa-plus {
+        display: block;
+        padding: 7px;
+        background-color: grey;
+    }
+
+    .hr-side {
+        display: block;
+        width: 150px;
+        border: 1px solid grey;
+        margin-left: 8px;
+    }
+
+    .hr-g-2 {
+        display: block;
+        position: absolute;
+        transform: rotate(90deg);
+        width: 25px;
+        border: 1.5px solid #99E12D;
+        top: 80px;
+        right: 126px;
+    }
+}
+
+@media screen and (min-width: 768px) {
     
 }
 
-@media screen and (mix-width: 1200px) {
+@media screen and (min-width: 1200px) {
     
 }
