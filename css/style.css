@@ -98,13 +98,23 @@ main {
     margin: 0 12px;
 }
 
-.col-foot {
-    width: calc(100% / 3 - 20px);
+.col-foot-left {
     height: 70px;
-    margin: 13px auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.col-foot-center {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.col-foot-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
 }
 
 .content-side {
@@ -122,10 +132,9 @@ main {
     margin-right: 10px;
 }
 
-.content-foot-row {
+.content-foot-row-center {
     display: flex;
-    gap: 22px;
-    position: relative;
+    justify-content: center;
 }
 
 /* Specs & Elements */
@@ -164,7 +173,7 @@ li {
     color: #75787C;
     font-size: 12px;
     margin: 5px auto;
-    padding: 10px;
+    padding: 5px;
 }
 
 .hr-g {
@@ -178,12 +187,32 @@ li {
 .hr-grey-1 {
     width: 20px;
     border: 2px solid #C1C1C1;
+    border-radius: 2px;
     margin-left: 5px;
 }
 
 .hr-grey-2 {
     width: 50px;
     border: 2px solid #5A5A5A;
+    border-radius: 2px;
+}
+
+.hr-grey-3 {
+    width: 40px;
+    height: 1px;
+    border: 2px solid #C1C1C1;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.hr-grey-4 {
+    width: 100px;
+    height: 1px;
+    border: 2px solid #5A5A5A;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-right: 10px;
 }
 
 h2 {
@@ -232,10 +261,15 @@ h6 {
     color: grey;
 }
 
-.fa-circle-play {
+/* .fa-circle-play {
     position: absolute;
     bottom: -5px;
     left: 55px;
+} */
+
+.time {
+    font-size: 10px;
+    color: white;
 }
 
 /* Utility */
