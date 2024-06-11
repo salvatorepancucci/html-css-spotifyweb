@@ -87,6 +87,7 @@ main {
     width: 50%;
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
 .col-main-double {
@@ -125,6 +126,7 @@ main {
 .content-main {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .content-foot-col {
@@ -157,6 +159,11 @@ button {
     padding: 15px 45px;
 }
 
+button:hover {
+    font-size: 15px;
+    cursor: pointer;
+}
+
 .icon-1 {
     width: 35px;
 }
@@ -181,6 +188,32 @@ li {
     font-size: 12px;
     margin: 5px auto;
     padding: 5px;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.content-foot-row-center:hover li .fa-circle-play{
+    font-size: 40px;
+}
+
+.play {
+    display: none;
+}
+
+.play {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-main:hover .play {
+    display: flex;
 }
 
 .hr-g {
@@ -224,6 +257,12 @@ li {
     border-radius: 2px;
     margin-top: 4px;
     margin-right: 10px;
+}
+
+.hr-grey-1:hover ,
+.hr-grey-3:hover {
+    border: 2px solid lime;
+    cursor: pointer;
 }
 
 h2 {
@@ -272,6 +311,12 @@ h6 {
     color: grey;
 }
 
+.fa-heart:hover,
+.fa-folder:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .fa-plus {
     display: none;
 }
@@ -299,6 +344,12 @@ h6 {
 
 .hr-side {
     display: none;
+}
+
+.content-foot-col:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
 }
 
 /* Utility */
@@ -401,6 +452,13 @@ h6 {
         color: grey;
         font-size: 11px;
         margin-top: 10px;
+    }
+
+    .menu-text-grey:hover,
+    .menu-text-grey-2:hover,
+    .fa-plus:hover {
+        color: white;
+        cursor: pointer;
     }
 
     .icon-2 {
