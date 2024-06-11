@@ -40,6 +40,7 @@ main {
 .container-side {
     display: flex;
     height: calc(100vh - 100px);
+    overflow-y: auto;
 }
 
 .container-main {
@@ -468,5 +469,29 @@ h6 {
 }
 
 @media screen and (min-width: 1200px) {
+    .col-main {
+        width: calc(100% / 6);
+        text-align: center;
+        margin: 0;
+    }
+
+    .hr-grey-3 {
+        width: 120px;
+    }
     
+    .hr-grey-4 {
+        width: 180px;
+    }
+
+    li {
+        padding: 5px 10px;
+    }
+
+    .col-foot-right {
+        margin-right: 15px;
+    }
+
+    .col-foot-left {
+        margin-left: 15px;
+    }
 }
