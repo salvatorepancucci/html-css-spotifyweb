@@ -132,6 +132,12 @@ main {
     margin-right: 10px;
 }
 
+.content-foot-col-3 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
 .content-foot-row-center {
     display: flex;
     justify-content: center;
@@ -431,7 +437,34 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
+    .content-main > img {
+        width: 100px;
+    }
+
+    .col-main {
+        width: 25%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .round {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .content-foot-col-3 {
+        display: inline-block;
+    }
+
+    .hr-grey-3 {
+        width: 70px;
+    }
     
+    .hr-grey-4 {
+        width: 130px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
