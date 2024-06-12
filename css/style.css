@@ -57,7 +57,7 @@ main {
     height: 100px;
     position: fixed;
     bottom: 0; 
-    z-index: 1;
+    z-index: 2;
 }
 
 .col-head {
@@ -574,5 +574,20 @@ h6 {
         color: grey;
         margin: 1px 0 20px 0;
         font-size: 13px;
+    }
+}
+
+@media screen and (max-height: 547px) {
+    .col-side-2 {
+        position: sticky;
+        z-index: 3;
+        background-color: black;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .content-side {
+        position: relative;
+        overflow-y: auto;
     }
 }
